@@ -85,7 +85,7 @@
 @layer utilities {
   /* SECTION STYLE */
   .main-container {
-    @apply px-4 sm:px-10 md:px-12 lg:px-16 xl:px-24 2xl:px-0 max-w-screen-2xl mx-auto;
+    @apply px-6 md:px-10 xl:px-12 2xl:px-0 max-w-screen-2xl mx-auto;
   }
   .section-margin {
     @apply mt-8 sm:mt-10 md:mt-14 lg:mt-16 xl:mt-24 2xl:mt-32;
@@ -128,5 +128,48 @@
   }
   .mini-text {
     @apply text-[10px] lg:text-xs 2xl:text-sm;
+  }
+}
+
+.customButton {
+  &:hover {
+    .perspectiveText {
+      transform: rotateX(90deg);
+
+      p {
+        &:nth-of-type(1) {
+          transform: translateY(-100%);
+          transition: all 0.4s cubic-bezier(0.61, 1, 0.88, 1);
+          opacity: 0;
+        }
+
+        &:nth-of-type(2) {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.perspectiveText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.4s cubic-bezier(0.61, 1, 0.88, 1);
+
+  p {
+    transition: all 0.4s cubic-bezier(0.61, 1, 0.88, 1);
+    pointer-events: none;
+
+    &:nth-of-type(2) {
+      position: absolute;
+      transform-origin: bottom center;
+      transform: rotateX(-90deg) translateY(13px);
+      opacity: 0;
+    }
   }
 }
