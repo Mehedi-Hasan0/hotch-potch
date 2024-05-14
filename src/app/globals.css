@@ -27,6 +27,10 @@
     @apply mt-8 sm:mt-10 md:mt-14 lg:mt-16 xl:mt-24 2xl:mt-32;
   }
 
+  .flex-center {
+    @apply flex items-center gap-5 justify-between;
+  }
+
   /* BTN STYLE & GRADIENT */
   .primary-gradient {
     @apply bg-gradient-to-r from-gradient to-gradient-foreground;
