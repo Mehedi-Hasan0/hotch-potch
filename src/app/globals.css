@@ -27,9 +27,12 @@
     @apply mt-8 sm:mt-10 md:mt-14 lg:mt-16 xl:mt-24 2xl:mt-32;
   }
 
-  /* BTN STYLE */
+  /* BTN STYLE & GRADIENT */
   .primary-gradient {
     @apply bg-gradient-to-r from-gradient to-gradient-foreground;
+  }
+  .secondary-gradient {
+    @apply bg-gradient-to-r from-[#FFC947] to-[#FC6739];
   }
 
   /* TEXT STYLE */
