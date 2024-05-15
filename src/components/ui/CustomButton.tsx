@@ -39,9 +39,9 @@ const CustomButton: React.FC<CustomButtonProps> = ({
         .to(
           circle.current,
           {
-            top: "-150%",
+            top: "-170%",
             width: "240%",
-            height: "150%",
+            height: "250%",
             duration: 0.4,
             ease: "power3.in",
           },
