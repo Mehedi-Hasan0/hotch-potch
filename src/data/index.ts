@@ -46,3 +46,46 @@ export const companyLogo = [
     icon: "/assets/icons/company-logo/com-logo-8.svg",
   },
 ];
+
+export const toolsData = [
+  {
+    icon: "/assets/images/tool/tool-1.png",
+    title: "Blog Headlines",
+    desc: "Write a better blog title with our A.I tool.",
+  },
+  {
+    icon: "/assets/images/tool/tool-2.png",
+    title: "Blog Intros",
+    desc: "Generate a paragraph of blog content using Blog Intros tool",
+  },
+  {
+    icon: "/assets/images/tool/tool-3.png",
+    title: "Blog Outline",
+    desc: "Need an attention-grabbing headline for your article?",
+  },
+  {
+    icon: "/assets/images/tool/tool-1.png",
+    title: "Blog Conclusions",
+    desc: "Write a better conclusions with AI writing tool.",
+  },
+  {
+    icon: "/assets/images/tool/tool-4.png",
+    title: "Content Rewriter",
+    desc: "Get AI writer to rewrite your sentence in a different way.",
+  },
+  {
+    icon: "/assets/images/tool/tool-2.png",
+    title: "Product Description",
+    desc: "Need an attention-grabbing headline for your article?",
+  },
+  {
+    icon: "/assets/images/tool/tool-3.png",
+    title: "PAS Copywriting Formula",
+    desc: "Get AI writer to rewrite your sentence in a different way.",
+  },
+  {
+    icon: "/assets/images/tool/tool-1.png",
+    title: "Company About Us",
+    desc: "Write a better blog title with our AI tool.",
+  },
+];
