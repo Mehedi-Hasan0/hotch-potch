@@ -38,12 +38,18 @@ const CustomButton: React.FC<CustomButtonProps> = ({
       timeline.current
         .to(
           circle.current,
-          { top: "-148%", width: "150%", duration: 0.4, ease: "power3.in" },
+          {
+            top: "-150%",
+            width: "240%",
+            height: "150%",
+            duration: 0.4,
+            ease: "power3.in",
+          },
           "enter"
         )
         .to(
           circle.current,
-          { top: "-295%", width: "125%", duration: 0.4 },
+          { top: "-295%", width: "125%", height: "100%", duration: 0.4 },
           "exit"
         );
     }
