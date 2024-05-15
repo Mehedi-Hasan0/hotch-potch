@@ -8,6 +8,6 @@ export const button = [
     borderColor: "border border-gradient",
     hoverColor1: "bg-[#FFC947]",
     hoverColor2: "bg-accent",
-    hoverColor3: "bg-primary",
+    hoverColor3: "accent-gradient",
   },
 ];
