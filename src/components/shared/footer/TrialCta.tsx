@@ -7,7 +7,7 @@ export default function TrialCta() {
           learly.
         </h3>
 
-        <button className="px-3 py-2.5 lg:px-4 lg:py-3.5 xl:px-5 xl:py-[18px] bg-white rounded-md text-primary link-text font-semibold">
+        <button className="px-3 py-2.5 lg:px-4 lg:py-3 2xl:px-5 2xl:py-[18px] bg-white rounded-md text-primary link-text font-semibold">
           Get 14 days free trial
         </button>
       </div>

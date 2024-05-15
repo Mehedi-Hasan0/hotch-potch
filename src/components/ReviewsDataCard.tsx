@@ -1,13 +1,21 @@
+"use client";
+
 import { reviewsData } from "@/data";
 import Image from "next/image";
 import { FaTwitter } from "react-icons/fa6";
+import { motion } from "framer-motion";
+import { cardVariant } from "./anim";
 
 export default function ReviewsDataCard() {
   return (
     <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-3 md:gap-4 lg:gap-5 2xl:gap-6">
       {reviewsData.map((data, idx) => (
-        <div
+        <motion.div
           key={idx}
+          variants={cardVariant}
+          initial="initial"
+          whileInView={"enter"}
+          viewport={{ once: true }}
           className={`break-inside-avoid rounded-md bg-white px-3 py-4 lg:px-4 lg:py-5 xl:px-5 xl:py-6 flex flex-col gap-3 md:gap-4 lg:gap-5 xl:gap-6 ${
             idx === 0
               ? "mb-3 md:mb-4 lg:mb-5 2xl:mb-6"
@@ -32,7 +40,7 @@ export default function ReviewsDataCard() {
             <p className="link-text text-primary">{data.desc}</p>
             <p className="link-text text-accent">{data.tag}</p>
           </div>
-        </div>
+        </motion.div>
       ))}
     </div>
   );
