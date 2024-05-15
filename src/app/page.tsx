@@ -1,5 +1,6 @@
 import Banner from "@/components/Banner";
 import Company from "@/components/Company";
+import Content from "@/components/Content";
 
 export default function Home() {
   console.log("server");
@@ -12,6 +13,14 @@ export default function Home() {
         <Banner />
       </div>
       <Company />
+      <Content
+        key={1}
+        className="flex flex-col md:flex-row items-center justify-evenly"
+        imgSrc="/assets/images/trial/trial-img-1.webp"
+        heading="Create content efficiently and quickly with great AI writing tools"
+        desc="150k+ users. No Credit Card Required. Pro designs and writing at no cost. Start for free. Ai Writer Tool | Generate text for ecom, social media, website, sales, blogs etc."
+        imgPositionStyle="-left-7 md:-left-0"
+      />
     </main>
   );
 }
