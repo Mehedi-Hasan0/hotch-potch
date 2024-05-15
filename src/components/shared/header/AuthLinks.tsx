@@ -25,7 +25,11 @@ export default function AuthLinks() {
       }`}
     >
       <Link href={"/"}>
-        <CustomButton key={1} textLabel="Sign in" />
+        <CustomButton
+          key={1}
+          textLabel="Sign in"
+          hoverColor3="accent-gradient"
+        />
       </Link>
       <Link href={"/"}>
         <CustomButton
@@ -33,9 +37,9 @@ export default function AuthLinks() {
           textLabel="Get started free"
           btnBgColor="primary-gradient"
           borderColor="border border-gradient"
-          hoverColor1="bg-[#FFC947]"
-          hoverColor2="bg-accent"
-          hoverColor3="bg-primary"
+          hoverColor1="bg-primary"
+          hoverColor2="bg-[#FFC947]"
+          hoverColor3="accent-gradient"
         />
       </Link>
     </div>
