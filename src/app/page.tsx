@@ -1,6 +1,9 @@
 import Banner from "@/components/Banner";
 import Company from "@/components/Company";
 import Content from "@/components/Content";
+import Misland from "@/components/Misland";
+import Price from "@/components/Price";
+import Reviews from "@/components/Reviews";
 import Tools from "@/components/Tools";
 
 export default function Home() {
@@ -34,7 +37,12 @@ export default function Home() {
           blobStyle="right-[100px] lg:right-[240px] xl:right-[300px] 2xl:right-[400px] -top-5 md:top-0 2xl:top-10 bg-[#366bf215]"
         />
       </div>
-      <Tools />
+      <div className="border-b border-gray-800">
+        <Tools />
+      </div>
+      <Misland />
+      <Reviews />
+      <Price />
     </main>
   );
 }
