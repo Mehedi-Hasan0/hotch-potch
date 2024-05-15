@@ -6,11 +6,11 @@ export default function PricingCard() {
       {pricingData.map((card, idx) => (
         <div
           key={idx}
-          className="p-8 rounded-lg bg-[#282A37] flex flex-col gap-7 lg:max-w-[330px] h-[420px] md:h-[420px] lg:h-[480px] xl:h-[510px] 2xl:h-[554px] relative"
+          className="p-8 rounded-lg bg-[#282A37] flex flex-col gap-5 md:gap-6 xl:gap-7 lg:max-w-[330px] h-[420px] md:h-[420px] lg:h-[480px] xl:h-[510px] 2xl:h-[554px] relative"
         >
           <p className="link-text text-white">{card.title}</p>
 
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-2 md:gap-3 xl:gap-4">
             <div className="flex items-end">
               <h2 className="sub-heading text-white">{card.price}</h2>
               <span className="font-outfit desc-text ">/month</span>
@@ -18,9 +18,9 @@ export default function PricingCard() {
             <p className="mini-text text-secondary/70">{card.maxTeam}</p>
           </div>
 
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-2 md:gap-3 xl:gap-4">
             <p className="link-text font-bold">{card.subTitle}</p>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-2 lg:gap-3">
               {card.included.map((inc, idx) => (
                 <p
                   key={idx}
