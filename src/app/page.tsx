@@ -13,7 +13,7 @@ export default function Home() {
         <Banner />
       </div>
       <Company />
-      <div className="section-padding flex flex-col gap-8 xl:gap-0">
+      <div className="section-padding flex flex-col gap-8 xl:gap-0 pb-8 md:pb-5 lg:pb-0">
         <Content
           key={1}
           className="flex flex-col md:flex-row items-center justify-evenly"
