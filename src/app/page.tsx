@@ -2,6 +2,8 @@ import Banner from "@/components/Banner";
 import Company from "@/components/Company";
 import Content from "@/components/Content";
 import Misland from "@/components/Misland";
+import Price from "@/components/Price";
+import Reviews from "@/components/Reviews";
 import Tools from "@/components/Tools";
 
 export default function Home() {
@@ -39,6 +41,8 @@ export default function Home() {
         <Tools />
       </div>
       <Misland />
+      <Reviews />
+      <Price />
     </main>
   );
 }

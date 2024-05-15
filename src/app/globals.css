@@ -121,7 +121,7 @@
     @apply text-4xl md:text-4xl lg:text-5xl xl:text-6xl;
   }
   .sub-heading {
-    @apply text-3xl md:text-2xl lg:text-3xl xl:text-[2.625rem];
+    @apply text-3xl md:text-2xl lg:text-3xl xl:text-[2.625rem] font-semibold;
   }
   .title-heading {
     @apply text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl;

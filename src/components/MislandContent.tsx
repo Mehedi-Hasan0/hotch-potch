@@ -1,6 +1,6 @@
 export default function MislandContent() {
   return (
-    <div className="w-full bg-[#282A37] rounded-lg max-w-[734px]">
+    <div className="w-full bg-[#282A37] rounded-lg max-w-[734px] mt-6 md:mt-0">
       {/* color ui */}
       <div className="flex items-center gap-2 px-5 py-5">
         <div className="w-3 h-3 rounded-full bg-[#F23936]" />
