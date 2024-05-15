@@ -25,8 +25,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${outfit.variable}`}>
-        <Header />
-        <ScrollProvider>{children}</ScrollProvider>
+        <ScrollProvider>
+          <Header />
+          {children}
+        </ScrollProvider>
       </body>
     </html>
   );
