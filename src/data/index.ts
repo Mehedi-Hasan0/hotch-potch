@@ -89,3 +89,30 @@ export const toolsData = [
     desc: "Write a better blog title with our AI tool.",
   },
 ];
+
+export const misLandBtnData = [
+  {
+    link: "#",
+    label: "Blog Headlines",
+  },
+  {
+    link: "#",
+    label: "Blog Intros",
+  },
+  {
+    link: "#",
+    label: "Content Rewriter",
+  },
+  {
+    link: "#",
+    label: "Facebook Ads",
+  },
+  {
+    link: "#",
+    label: "Product Description",
+  },
+  {
+    link: "#",
+    label: "PAS Copywriting Formula",
+  },
+];

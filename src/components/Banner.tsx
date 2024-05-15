@@ -4,7 +4,7 @@ import SecondaryButton from "./ui/SecondaryButton";
 
 export default function Banner() {
   return (
-    <section className="flex items-center justify-center lg:min-h-[60vh] relative section-padding pb-6 md:pb-8 lg:pb-12 xl:pb-14 overflow-hidden">
+    <section className="flex items-center justify-center lg:min-h-[60vh] relative section-padding pb-6 md:pb-8 lg:pb-12 xl:pb-14 overflow-hidden border-b border-gray-800">
       {/* main content */}
       <div className="relative flex items-start justify-center main-container ">
         {/* bg gradient overlay */}
