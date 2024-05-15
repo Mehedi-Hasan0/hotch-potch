@@ -7,7 +7,8 @@ interface ContentProps {
   imgSrc: string;
   heading: string;
   desc: string;
-  imgPositionStyle: string;
+  imgStyle: string;
+  blobStyle: string;
 }
 
 const Content: React.FC<ContentProps> = ({
@@ -15,19 +16,22 @@ const Content: React.FC<ContentProps> = ({
   imgSrc,
   heading,
   desc,
-  imgPositionStyle,
+  imgStyle,
+  blobStyle,
 }) => {
   return (
-    <section className="section-padding main-container">
-      <div className={`${className} relative`}>
+    <section className="main-container">
+      <div className={`${className} relative 2xl:px-44`}>
         {/* blob blur */}
-        <div className="absolute left-[100px] lg:left-[200px] 2xl:left-[300px] top-0 bg-[#a136f214] w-[200px] h-[200px] md:w-[300px] xl:w-[400px] md:h-[300px] xl:h-[400px] rounded-full blur-2xl" />
+        <div
+          className={`absolute w-[200px] h-[200px] md:w-[300px] xl:w-[400px] md:h-[300px] xl:h-[400px] rounded-full blur-3xl ${blobStyle}`}
+        />
         <Image
           src={imgSrc}
           alt="Seo content written by ai"
           width={690}
           height={650}
-          className={`md:h-[350px] lg:h-[450px] xl:h-[530px] 2xl:h-[650px] md:object-contain xl:object-none relative z-10 ${imgPositionStyle}`}
+          className={`relative z-10 ${imgStyle}`}
         />
 
         <div className="flex flex-col gap-4 lg:gap-7">
