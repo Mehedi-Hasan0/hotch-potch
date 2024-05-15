@@ -123,6 +123,9 @@
   .sub-heading {
     @apply text-3xl md:text-2xl lg:text-3xl xl:text-[2.625rem] font-semibold;
   }
+  .cta-heading {
+    @apply text-3xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold;
+  }
   .title-heading {
     @apply text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl;
   }
